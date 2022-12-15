@@ -60,7 +60,7 @@ int main ( int argc, char *argv[] )
 			dr.drawLine(-25, 50, 25, 50, "A" + std::to_string(6));
 			dr.show("Map - Server", 1000);
 			// Check if A1 and A2, and A1 and A6 intersec
-			Point ini_a0(0,0), end_a0(0,100), ini_a1(50,0), end_a1(50,1000), ini_a6(-25,50), end_a6(25,50);
+			Point ini_a0(0,0), end_a0(0,100), ini_a1(50,0), end_a1(50,100), ini_a6(-25,50), end_a6(25,50);
 			utils.doIntersect(ini_a0,end_a0,ini_a1,end_a1) ? std::cout << "A0A1 - Yes\n": std::cout << "A0A1 - No\n";
 			utils.doIntersect(ini_a0,end_a0,ini_a6,end_a6) ? std::cout << "A0A6 - Yes\n": std::cout << "A0A6 - No\n";
 		}
